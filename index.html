@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100&display=swap" rel="stylesheet">
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css'> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css'>
+    <link rel="stylesheet" href="css/timeline.css">
+
+    <title>Introdução à Inteligência Artificial</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css">
+
+    <link rel="icon" href="images/icon-unifil-logo.png">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- CAPA -->
+            <section data-background-image="images/cover-background.png">
+                <h2 style="text-align: right;">
+                    Introdução à Inteligência Artificial
+                </h2>
+                <hr>
+                <p style="text-align: right;">
+                    Kelvin de Lucca Feltrin
+                </p>
+                <p style="text-align: right;">Londrina, 2021</p>
+            </section>
+
+            <!-- INTELIGENCIA ARTIFICIAL -->
+            <section>
+                <h3>Inteligência Artificial</h3>
+
+                <div style="display: flex; align-items: center;">
+                    <p style="text-align: center;">Sistemas que simulam a capacidade humana para resolver problemas</p>
+                    <img src="images/robot-piano.jpg" width="500" height="400">
+                </div>
+            </section>
+
+            <!-- CAMPOS DA INTELIGENCIA ARTIFICIAL -->
+            <section>
+                <h3>Campos da Inteligência Artificial</h3>
+                <img src="images/AI-areas.jpg" width="900" height="550">
+            </section>
+
+            <!-- HISTÓRIA DA IA -->
+            <section>
+                <section>
+                    <h3>História da IA</h3>
+                </section>
+
+                <section class="sem-margem">
+                    <section class="timeline-carousel">
+                        <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/Runaround.jpg') center center; background-repeat: no-repeat;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1942</span>
+                                    <span class="month">Isaac Asimov - Runaround</span>
+                                    <p>
+                                        História sobre um robô desenvolvido pelos engenheiros Gregory Powell e Mike Donavan - evolui em torno das <a href="https://pt.wikipedia.org/wiki/Leis_da_Robótica" class="read-more">Três Leis da Robótica.</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/the-bombe.jpg') center center; background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1942</span>
+                                    <span class="month">Alan Turing - The Bombe</span>
+                                    <p>Desenvolveu uma máquina de decifrar códigos chamada The Bombe para o governo britânico, com o objetivo de decifrar o código do "Enigma", usado pelo exército alemão na Segunda Guerra Mundial. </p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/turing-test.jpg') center center; background-size:cover; width: 100%;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1950</span>
+                                    <span class="month">Alan Turing - Teste de Turing</span>
+                                    <p>Ele publicou seu artigo "Computing Machinery and Intelligence", onde descreveu como criar máquinas inteligentes e, em particular, como testar sua inteligência. Este Teste de Turing ainda é considerado hoje como uma
+                                        referência para identificar a inteligência de um sistema artificial.</p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/DSRPAI.png') center center; background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1956</span>
+                                    <span class="month">Marvin Minsky e John McCarthy</span>
+                                    <p>sediaram o Projeto de Pesquisa de Verão de Dartmouth sobre Inteligência Artificial (DSRPAI) de aproximadamente oito semanas no Dartmouth College em New Hampshire. Este workshop - que marca o início da AI Spring e foi
+                                        financiado pela Fundação Rockefeller - reuniu aqueles que mais tarde seriam considerados os fundadores da AI. </p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/ELIZA_conversation.png'); background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1964</span>
+                                    <span class="month">Joseph Weizenbaum - ELIZA</span>
+                                    <p>ELIZA foi uma ferramenta de processamento de linguagem natural capaz de simular uma conversa com um humano, e um dos primeiros programas capazes de passar no teste de Turing.</p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/GPS.jpg') center; background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1964</span>
+                                    <span class="month">Herbert Simon, Cliff Shaw e Allen Newell - General Problem Solver</span>
+                                    <p>Solucionador de problemas gerais que era capaz de resolver automaticamente certos tipos de problemas simples, como as <a href="https://pt.wikipedia.org/wiki/Torre_de_Hanói" class="read-more">Torres de Hanói.</a></p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/Lighthill.jpeg') center center; background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1973</span>
+                                    <span class="month">O congresso dos EUA começou a criticar fortemente os altos gastos com pesquisas de IA.</span>
+                                    <p>James Lighthill publicou um relatório encomendado pelo British Science Research Council no qual questionava a perspectiva otimista dada pelos pesquisadores de IA. Em resposta, o governo britânico encerrou o apoio à
+                                        pesquisa de IA em todas, exceto três universidades (Edimburgo, Sussex e Essex) e o governo dos EUA logo seguiu o exemplo britânico. Este período iniciou o AI Winter.</p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/Deep-Blue.jpg') center center; background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">1997</span>
+                                    <span class="month">IBM - Deep Blue chess playing</span>
+                                    <p>O programa de jogo de xadrez Deep Blue da IBM, foi capaz de derrotar o campeão mundial Gary Kasparov. O Deep Blue foi capaz de processar 200 milhões de movimentos possíveis por segundo e determinar o próximo movimento
+                                        ideal olhando 20 movimentos à frente por meio do uso de um método chamado busca em árvore. </p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/alphago.jpg') center center; background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">2015</span>
+                                    <span class="month">Google - AlphaGo</span>
+                                    <p>AlphaGo, um programa desenvolvido pelo Google, conseguiu vencer o campeão mundial no jogo de tabuleiro Go. O jogo é substancialmente mais complexo do que o xadrez. AlphaGo alcançou seu alto desempenho usando um tipo
+                                        específico de rede neural artificial chamada Deep Learning. </p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+
+                            <!--Timeline item-->
+                            <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                    <div class="media-wrapper media-wrapper--overlay" style="background: url('images/timeline/autonomous-car.gif') center center; background-size:cover;"></div>
+                                </div>
+                                <div class="timeline-carousel__item-inner">
+                                    <span class="year">2021</span>
+                                    <span class="month">Redes neurais artificiais e Deep Learning</span>
+                                    <p>Redes neurais artificiais e Deep Learning formam a base da maioria das aplicações que conhecemos sob o rótulo de IA. Eles são a base dos algoritmos de reconhecimento de imagem usados pelo Facebook, algoritmos de reconhecimento
+                                        de voz que alimentam alto-falantes inteligentes e carros autônomos. </p>
+                                </div>
+                            </div>
+                            <!--/Timeline item-->
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <!-- SUGESTÃO DE VÍDEO -->
+            <section>
+                <h3>Sugestão de Vídeo</h3>
+                <iframe width="800" height="550" src="https://www.youtube.com/embed/UwsrzCVZAb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+
+            <!-- NOTICIAS -->
+            <section>
+                <h3>Noticias da área de IA</h3>
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/noticias/unicamp.jpg" width="1000" height="500">
+                            <div class="carousel-caption">
+                                <a href="https://g1.globo.com/sp/campinas-regiao/noticia/2021/06/15/teste-desenvolvido-na-unicamp-usa-inteligencia-artificial-para-diagnosticar-covid-19.ghtml" target="blank">
+                                    <p>Teste desenvolvido na Unicamp usa inteligência artificial para diagnosticar Covid-19</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/noticias/razer.jpg" width="1000" height="500">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="https://forbes.com.br/forbesesg/2021/06/razer-faz-parceria-com-startup-para-usar-inteligencia-artificial-na-limpeza-dos-oceanos/" target="blank">
+                                    <p>Razer faz parceria com startup para usar inteligência artificial na limpeza dos oceanos</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/noticias/sol.jpg" width="1000" height="500">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="https://exame.com/ciencia/inteligencia-artificial-identifica-buracos-no-sol/" target="blank">
+                                    <p>Com inteligência artificial, cientistas identificam "buracos" no Sol</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/noticias/fake-news.jpeg" width="1000" height="500">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="https://canaltech.com.br/internet/mit-desenvolve-inteligencia-artificial-para-combate-fake-news-na-internet-186082/" target="blank">
+                                    <p>MIT desenvolve inteligência artificial para combate fake news na internet</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/noticias/sony.jpg" width="1000" height="500">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="https://www.theenemy.com.br/playstation/playstation-agente-inteligencia-artificial" target="blank">
+                                    <p>PlayStation trabalha em 'agentes' IA que vão jogar com o jogador</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/noticias/code.png" style="filter: blur(2px);" width="1000" height="500">
+                            <div class="carousel-caption d-none d-md-block">
+                                <a href="https://news.mit.edu/2021/toward-deep-learning-models-that-can-reason-about-code-like-humans-0415" target="blank">
+                                    <p>Rumo a modelos de aprendizado profundo que podem raciocinar sobre o código mais como humanos</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- MACHINE LEARNING -->
+            <section>
+                <section>
+                    <h3>Machine Learning</h3>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; width: 45%; align-items: center;">
+                            <img src="images/icons/contorno-da-visao-superior-do-cerebro.png" width="150" height="150">
+                            <p>Processo de aprendizagem de máquina</p>
+                        </div>
+                        <div style="display: flex; width: 45%; align-items: center;">
+                            <img src="images/icons/matematicas.png" width="150" height="150">
+                            <p>Métodos matemáticos que treinam algoritmos</p>
+                        </div>
+                        <div style="display: flex; width: 45%; align-items: center;">
+                            <img src="images/icons/pesquisando-dados-no-banco-de-dados.png" width="150" height="150">
+                            <p>Sistemas que aprendem com os dados</p>
+                        </div>
+                        <div style="display: flex; width: 45%; align-items: center;">
+                            <img src="images/icons/automato.png" width="150" height="150">
+                            <p>Pouca ou nenhuma intervenção humana</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Machine Learning</h3>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column;">
+                            <p>Métodos Preditivos</p>
+                            <a class="metodos" href="#/7">Classificação</a>
+                            <a class="metodos" href="#/7/1">Regressão</a>
+                        </div>
+                        <div class="linha-vertical"></div>
+                        <div style="display: flex; flex-direction: column;">
+                            <p>Métodos Descritivos</p>
+                            <a class="metodos" href="#/8">Associação</a>
+                            <a class="metodos" href="#/8/1">Agrupamento</a>
+                            <a class="metodos" href="#/8/2">Detecção de Desvios</a>
+                            <a class="metodos" href="#/8/3">Padrões Sequenciais</a>
+                            <a class="metodos" href="#/8/4">Sumarização</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- METODOS PREDITIVOS -->
+            <section>
+                <section>
+                    <h3>Métodos Preditivos</h3>
+                    <p>Classificação</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Marketing</li>
+                            <li>Satisfação de clientes</li>
+                            <li>Risco de crédito</li>
+                            <li>Filtro de SPAM</li>
+                            <li>Previsão de doenças</li>
+                        </ul>
+                        <img src="images/classificacao.png" width="450" height="450">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Métodos Preditivos</h3>
+                    <p>Regressão</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Gastos com propaganda</li>
+                            <li>Temperatura, umidade</li>
+                            <li>Riscos de investimento</li>
+                            <li>Resultados de exames médicos</li>
+                        </ul>
+                        <img src="images/regressao.png" width="450" height="450">
+                    </div>
+                </section>
+            </section>
+
+            <!-- METODOS DESCRITIVOS -->
+            <section>
+                <section>
+                    <h3>Métodos Descritivos</h3>
+                    <p>Associação</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Prateleiras de mercado</li>
+                            <li>Catálogos de lojas</li>
+                            <li>Evasao de universidades</li>
+                        </ul>
+                        <img src="images/associacao.png" width="530" height="400">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Métodos Descritivos</h3>
+                    <p>Agrupamento</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Segmentação de mercado</li>
+                            <li>Agrupamento de documentos</li>
+                            <li>Agrupamento de produtos</li>
+                            <li>Perfis de clientes (NetFlix)</li>
+
+                        </ul>
+                        <img src="images/agrupamento.png" width="500" height="500">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Métodos Descritivos</h3>
+                    <p>Detecção de Desvios (outliers)</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Fraude em cartão de crédito</li>
+                            <li>Invasão de redes</li>
+                            <li>Análise de atletas (doping)</li>
+                            <li>Desvio de energia elétrica</li>
+                        </ul>
+                        <img src="images/deteccao-de-desvios.png" width="500" height="500">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Métodos Descritivos</h3>
+                    <p>Padrões Sequenciais</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Livrarias</li>
+                            <li>Prevenção de doenças</li>
+                            <li>Navegação em websites</li>
+                        </ul>
+                        <img src="images/padroes-sequenciais.png" width="500" height="450">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Métodos Descritivos</h3>
+                    <p>Sumarização</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Perfis de pessoas</li>
+                            <li>Segmentação de mercado</li>
+                        </ul>
+                        <img src="images/sumarizacao.jpg" width="500" height="450">
+                    </div>
+                </section>
+            </section>
+
+            <!-- TIPOS DE MACHINE LEARNING -->
+            <section>
+                <section>
+                    <h3>Tipos de Machine Learning</h3>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column;">
+                            <p>Supervisionado</p>
+                            <a class="metodos" href="">Classificação</a>
+                            <a class="metodos" href="">Regressão</a>
+                        </div>
+                        <div class="linha-vertical"></div>
+                        <div style="display: flex; flex-direction: column;">
+                            <p>Não Supervisionado</p>
+                            <a class="metodos" href="">Associação</a>
+                            <a class="metodos" href="">Agrupamento</a>
+                            <a class="metodos" href="">Detecção de Desvios</a>
+                            <a class="metodos" href="">Padrões Sequenciais</a>
+                            <a class="metodos" href="">Sumarização</a>
+                        </div>
+                        <div class="linha-vertical"></div>
+                        <div style="display: flex; flex-direction: column;">
+                            <p>Reforço</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Aprendizado Supervisionado</h3>
+                    <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+                        <div class="card" style="width: 80px">
+                            <img src="images/pato1.png" class="card-img-top">
+                            <img src="images/coelho.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text">Fase 1</p>
+                            </div>
+                        </div>
+                        <img class="fragment" src="images/right-arrow.png" width="50" height="50">
+                        <p class="metodos fragment" style="font-size: 15px;">Extração de características</p>
+                        <img class="fragment" src="images/right-arrow.png" width="50" height="50">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <p class="metodos fragment" style="font-size: 15px;">Algoritmo de aprendizagem</p>
+                            <img class="fragment" src="images/right-arrow.png" style="transform: rotate(-90deg)" width="50" height="50">
+                            <p class="metodos fragment" style="font-size: 15px;">Supervisor</p>
+                        </div>
+                        <img class="fragment" src="images/right-arrow.png" width="50" height="50">
+                        <p class="metodos fragment" style="font-size: 15px; background-color: rgb(24, 153, 35) !important;">Modelo aprendido</p>
+                    </div>
+                    <hr>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div class="card " style="width: 5rem; ">
+                            <img src="images/pato2.png " class="card-img-top ">
+                            <div class="card-body ">
+                                <p class="card-text ">Fase 2</p>
+                            </div>
+                        </div>
+                        <img class="fragment " src="images/right-arrow.png " width="50 " height="50 ">
+                        <p class="metodos fragment " style="font-size: 15px; ">Extração de características</p>
+                        <img class="fragment " src="images/right-arrow.png " width="50 " height="50 ">
+                        <p class="metodos fragment" style="font-size: 15px; background-color: rgb(24, 153, 35) !important;">Modelo aprendido</p>
+                        <img class="fragment " src="images/right-arrow.png " width="50 " height="50 ">
+                        <p class="metodos fragment " style="font-size: 15px; font-weight: bold;">"Pato"</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Aprendizado Não Supervisionado</h3>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Analisa os dados automaticamente</li>
+                            <li>Detecta tendências nos dados sem identificação</li>
+                        </ul>
+                        <img src="images/agrupamento.png" width="500" height="450">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Aprendizado Por Reforço</h3>
+                    <div style="display: flex; justify-content: space-between;">
+                        <ul>
+                            <li>Aprende interagindo com o ambiente</li>
+                            <li>Aprende com a propria experiencia</li>
+                            <li>Baseado em recompensas</li>
+                        </ul>
+                        <img src="images/reinforcement-learning.png" width="550" height="450">
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h3>Algoritmo de Machine Learning</h3>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js "></script>
+    <script src="plugin/notes/notes.js "></script>
+    <script src="plugin/markdown/markdown.js "></script>
+    <script src="plugin/highlight/highlight.js "></script>
+    <script src="plugin/zoom/zoom.js "></script>
+    <script src="plugin/mouse-pointer/mouse-pointer.js "></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            margin: 0,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+        });
+    </script>
+    <script src="bootstrap/bootstrap.min.js "></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+    <script src="js/timeline.js"></script>
+</body>
+
+</html>
