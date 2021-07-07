@@ -748,7 +748,7 @@ html.reveal-full-page {
 
 .reveal.overview .slides>section,
 .reveal.overview .slides>section>section {
-    pointer-events: auto
+    pointer-events: auto !important
 }
 
 .reveal .slides>section.future,
@@ -1081,7 +1081,7 @@ html.reveal-full-page {
 
 .reveal.fade.overview .slides section,
 .reveal.fade.overview .slides>section>section {
-    transition: none
+    transition: none !important
 }
 
 .reveal .slides section[data-transition=none],
@@ -1328,12 +1328,12 @@ html.reveal-full-page {
 }
 
 .reveal.overview {
-    perspective-origin: 50% 50%;
-    perspective: 700px
+    perspective-origin: 50% 50% !important;
+    perspective: 700px !important
 }
 
 .reveal.overview .slides {
-    -moz-transform-style: preserve-3d
+    -moz-transform-style: preserve-3d !important
 }
 
 .reveal.overview .slides section {
@@ -1342,8 +1342,8 @@ html.reveal-full-page {
     opacity: 1!important;
     overflow: hidden;
     visibility: visible!important;
-    cursor: pointer;
-    box-sizing: border-box
+    cursor: pointer !important;
+    box-sizing: border-box !important
 }
 
 .reveal.overview .slides section.present,
@@ -1353,8 +1353,8 @@ html.reveal-full-page {
 }
 
 .reveal.overview .slides section .fragment {
-    opacity: 1;
-    transition: none
+    opacity: 1 !important;
+    transition: none !important
 }
 
 .reveal.overview .slides section:after,
@@ -1363,37 +1363,37 @@ html.reveal-full-page {
 }
 
 .reveal.overview .slides>section.stack {
-    padding: 0;
+    padding: 0 !important;
     top: 0!important;
-    background: 0 0;
-    outline: 0;
-    overflow: visible
+    background: 0 0 !important;
+    outline: 0 !important;
+    overflow: visible !important
 }
 
 .reveal.overview .backgrounds {
-    perspective: inherit;
-    -moz-transform-style: preserve-3d
+    perspective: inherit !important;
+    -moz-transform-style: preserve-3d !important
 }
 
 .reveal.overview .backgrounds .slide-background {
-    opacity: 1;
-    visibility: visible;
-    outline: 10px solid rgba(150, 150, 150, .1);
-    outline-offset: 10px
+    opacity: 1 !important;
+    visibility: visible !important;
+    outline: 10px solid rgba(150, 150, 150, .1) !important;
+    outline-offset: 10px !important
 }
 
 .reveal.overview .backgrounds .slide-background.stack {
-    overflow: visible
+    overflow: visible !important
 }
 
 .reveal.overview .slides section,
 .reveal.overview-deactivating .slides section {
-    transition: none
+    transition: none !important
 }
 
 .reveal.overview .backgrounds .slide-background,
 .reveal.overview-deactivating .backgrounds .slide-background {
-    transition: none
+    transition: none !important
 }
 
 .reveal.rtl .slides,
@@ -1598,8 +1598,8 @@ html.reveal-full-page {
 }
 
 .reveal.overview .playback {
-    opacity: 0;
-    visibility: hidden
+    opacity: 0 !important;
+    visibility: hidden !important
 }
 
 .reveal .hljs {

@@ -522,8 +522,418 @@
                 </section>
             </section>
 
+            <!-- Algoritmo de Machine Learning - Árvore de Decisão-->
             <section>
-                <h3>Algoritmo de Machine Learning</h3>
+                <section>
+                    <h3>Algoritmo de Machine Learning</h3>
+                    <h5>Árvore de Decisão</h5>
+                    <div style="background: white; display: flex; justify-content: center; border: 2px solid black;">
+                        <img src="images/arvore-decisao/arvore-capa.gif" width="400" height=400>
+                        <img src="images/arvore-decisao/arvore-capa-diagrama.png" width="400" height=400>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Base - Risco crédito</h3>
+                    <img src="images/arvore-decisao/base-credito.png">
+                </section>
+
+                <section>
+                    <h3>Árvore - Base crédito</h3>
+                    <div class="r-stack">
+                        <img class="fragment arvore" src="images/arvore-decisao/arvore de decisao.png">
+                        <img class="fragment arvore" src="images/arvore-decisao/arvore de decisao - teste1.png">
+                        <img class="fragment arvore" src="images/arvore-decisao/arvore de decisao - teste2.png">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Fórmulas Matemáticas</h3>
+                    <img src="images/arvore-decisao/arvore-formula.png">
+                </section>
+
+                <section>
+                    <div style="display: flex; justify-content: space-between; align-items: center; font-size: 25px; background: white;">
+                        <img src="images/arvore-decisao/risco.png">
+                        <div>
+                            <p>Alto = 6/14</p>
+                            <p>Moderado = 3/14</p>
+                            <p>Baixo = 5/14</p>
+                        </div>
+                        <div>
+                            <p>E(s) = -6/14 * log(6/14;2) - 3/14 * log(3/14;2) - </p>
+                            <p>5/14 * log(5/14;2) = 1,53</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div style="display: flex;">
+                        <img src="images/arvore-decisao/base credito - historia.png" width="400px">
+                        <img src="images/arvore-decisao/ganho-historia.png" height="500">
+                    </div>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop">Fórmulas</button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-body">
+                            <img src="images/arvore-decisao/arvore-formula.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div style="display: flex;">
+                        <img src="images/arvore-decisao/base credito - divida.png" width="350px">
+                        <img src="images/arvore-decisao/ganho-divida.png" height="500">
+                    </div>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">Fórmulas</button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-body">
+                            <img src="images/arvore-decisao/arvore-formula.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div style="display: flex;">
+                        <img src="images/arvore-decisao/base credito - garantias.png" width="350px">
+                        <img src="images/arvore-decisao/ganho-garantias.png" height="500">
+                    </div>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">Fórmulas</button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop3" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-body">
+                            <img src="images/arvore-decisao/arvore-formula.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div style="display: flex;">
+                        <img src="images/arvore-decisao/base credito - renda.png" width="400px">
+                        <img src="images/arvore-decisao/ganho-renda.png" height="500">
+                    </div>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop">Fórmulas</button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop4" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-body">
+                            <img src="images/arvore-decisao/arvore-formula.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Geração da Árvore</h3>
+                    <img src="images/arvore-decisao/arvore-decisao-inicio-renda.png" height="350">
+                </section>
+
+                <section>
+                    <h3>Árvore de decisão</h3>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <p style="background: #99BF2B; color: white !important;">
+                                Vantagens
+                            </p>
+                            <ul>
+                                <li>Fácil de interpretar</li>
+                                <li>Não precisa de normalização</li>
+                                <li>Rápido na classificação de novos registros</li>
+                                <li>Upgrades como random forest melhoram o desempenho</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p style="background: #E75847; color: white !important;">
+                                Desvantagens
+                            </p>
+                            <ul>
+                                <li>Geração de árvores complexas</li>
+                                <li>Pequenas mudanças nos dados pode mudar a árvore</li>
+                                <li>Problema NP-completo para construir a árvore</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Código em Python</h3>
+                    <div style="display: flex; justify-content: center; align-items: center">
+                        <img src="images/colab-icon.png" width="80" height="80">
+                        <a href="https://colab.research.google.com/drive/1wrSamsUDAycxYqq7c0AZah5iX-Iy6PMJ?usp=sharing">Árvores de decisão - Base risco de crédito</a>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center">
+                        <img src="images/icons/download.png" width="35" height="35" style="padding-right: 5px;">
+                        <a href="images/arvore-decisao/risco_credito.pkl" download>Download da base de dados</a>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Algoritmo de Machine Learning - KNN-->
+            <section>
+                <section>
+                    <h3>Algoritmo de Machine Learning</h3>
+                    <h5>KNN (K-Nearest Neighbors)</h5>
+                    <img src="images/knn/knn-cover.gif" width=600 height=400>
+                </section>
+
+                <section>
+                    <h3>KNN</h3>
+                    <div class="r-stack">
+                        <img class="fragment" src="images/knn/knn-1.png">
+                        <img class="fragment" src="images/knn/knn-2.png">
+                        <img class="fragment" src="images/knn/knn-3.png">
+                    </div>
+                </section>
+
+                <section>
+                    <h3>KNN</h3>
+                    <div style="display: flex; flex-direction: row-reverse; justify-content: space-between; background: white;">
+                        <img class="fragment" src="images/knn/knn-3.png">
+                        <div style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="fragment" style="display: flex; align-items: center;">
+                                <p>K = 1</p>
+                                <img class="knn-circle" src="images/knn/blue-circle.png">
+                            </div>
+                            <div class="fragment" style="display: flex; align-items: center;">
+                                <p>K = 2</p>
+                                <img class="knn-circle" src="images/knn/blue-circle.png">
+                                <img class="knn-circle" src="images/knn/red-circle.png">
+                            </div>
+                            <div class="fragment" style="display: flex; align-items: center;">
+                                <p>K = 3</p>
+                                <img class="knn-circle" src="images/knn/red-circle.png">
+                            </div>
+                            <div class="fragment" style="display: flex; align-items: center;">
+                                <p>K = 4</p>
+                                <img class="knn-circle" src="images/knn/red-circle.png">
+                            </div>
+                            <div class="fragment" style="display: flex; align-items: center;">
+                                <p>K = 7</p>
+                                <img class="knn-circle" src="images/knn/blue-circle.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>KNN</h3>
+                    <ul>
+                        <li>A maioria dos métodos de aprendizagem constroem um modelo após o treinamento (os dados são descartados após a criação do modelo)
+                        </li>
+                        <br>
+                        <li>Métodos baseados em instâncias simplesmente armazenam os exemplos de treinamento
+                        </li>
+                        <br>
+                        <li>A previsão é feita somente quando uma nova instância precisa ser classificada (lazy)
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Fórmula Matemática</h3>
+                    <img src="images/knn/formula-knn.png">
+                </section>
+
+                <section>
+                    <h3>Aplicação da Fórmula</h3>
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <img src="images/knn/formula-knn.png" width="450" height="150">
+                        <ul style="font-size: 25px;">
+                            <li>x = 5, 7, 9</li>
+                            <li>y = 5, 5, 5</li>
+                            <li>Subtração de cada posição do vetor</li>
+                            <ul>
+                                <li>5 - 5 = 0</li>
+                                <li>7 - 5 = 2</li>
+                                <li>9 - 5 = 4</li>
+                            </ul>
+                            <li>Elevação ao quadrado</li>
+                            <ul>
+                                <li>0² = 0</li>
+                                <li>2² = 4</li>
+                                <li>4² = 16</li>
+                            </ul>
+                            <li>Somatório</li>
+                            <ul>
+                                <li>0 + 4 + 16 = 20</li>
+                            </ul>
+                            <li>Raiz quadrada</li>
+                            <ul>
+                                <li>Raiz(20) = 4,47</li>
+                            </ul>
+                            <li>Distância Euclidiana = 4,47</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Sistemas de recomendação</h3>
+                    <img src="images/knn/recomendacao.png">
+                </section>
+
+                <section>
+                    <h3>Sistemas de recomendação</h3>
+                    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 25px; background: white;">
+                        <img src="images/knn/recomendacao.png" width="500" height="400">
+                        <div>
+                            <p>Ana x Marcos</p>
+                            <p>X = 3,0 3,5</p>
+                            <p>Y = 1,5 5,0</p>
+                            <ul>
+                                <li>(3,0 - 1,5)² = 2,25</li>
+                                <li>(3,5 - 5,0)² = 2,25</li>
+                            </ul>
+                            <br><br>
+                            <ul>
+                                <li>2,25 + 2,25 = 4,5</li>
+                            </ul>
+                            <br><br>
+                            <ul>
+                                <li>Raiz(4,5) = 2,12</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p>Ana x Cláudia</p>
+                            <p>X = 3,0 3,5</p>
+                            <p>Y = 3,0 4,0</p>
+                            <ul>
+                                <li>(3,0 - 3,0)² = 0,00</li>
+                                <li>(3,5 - 4,0)² = 0,25</li>
+                            </ul>
+                            <br><br>
+                            <ul>
+                                <li>0,00 + 0,25 = 0,25</li>
+                            </ul>
+                            <br><br>
+                            <ul>
+                                <li>Raiz(0,25) = 0,50</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTopKnn" aria-controls="offcanvasTop">Fórmula</button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTopKnn" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-body-1">
+                            <img src="images/knn/formula-knn.png">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>KNN - Classificação</h3>
+                    <img src="images/knn/knn-classificacao.png">
+                </section>
+
+                <section>
+                    <div style="display: flex; justify-content: space-between; font-size: 22px; line-height: 0;">
+                        <div style="border: 2px solid black; height: 50%;">
+                            <p>Violência = 0.8</p>
+                            <p>Romance = 0.1</p>
+                            <p>Ação = 0.5</p>
+                            <p>Comédia = 0.0</p><br>
+                            <p> A Hora do pesadelo </p>
+                        </div>
+
+                        <div>
+                            <p style="font-weight: bold;">Pesadelo x Invocação</p>
+                            <p>0,8 0,1 0,5 0,0</p>
+                            <p>0,6 0,0 0,3 0,0</p><br>
+                            <p>0,2² + 0,1² + 0,2² + 0</p>
+                            <p>0,04 + 0,01 + 0,04 = 0,09</p>
+                            <p>Raiz(0,09) = 0,30</p>
+
+                            <p style="font-weight: bold;">Pesadelo x Passado</p>
+                            <p>0,8 0,1 0,5 0,0</p>
+                            <p>0,1 0,2 0,1 0,9</p><br>
+                            <p>0,7² + 0,1² + 0,4² + 0,9²</p>
+                            <p>0,49 + 0,01 + 0,16 + 0,8 = 1,46</p>
+                            <p>Raiz(1,46) = 1,20</p>
+                        </div>
+
+                        <div>
+                            <p style="font-weight: bold;">Pesadelo x Floresta</p>
+                            <p>0,8 0,1 0,5 0,0</p>
+                            <p>0,9 0,0 0,5 0,1</p><br>
+                            <p>0,1² + 0,1² + 0 + 0,1²</p>
+                            <p>0,01 + 0,01 + 0,01 = 0,03</p>
+                            <p>Raiz(0,03) = 0,17</p>
+
+                            <p style="font-weight: bold;">Pesadelo x Atraso</p>
+                            <p>0,8 0,1 0,5 0,0</p>
+                            <p>0,0 0,2 0,2 0,8</p><br>
+                            <p>0,8² + 0,1² + 0,4² + 0,8²</p>
+                            <p>0,64 + 0,01 + 0,16 + 0,64 = 1,45</p>
+                            <p>Raiz(1,45) = 1,20</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>KNN</h3>
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+                            <p style="background: #99BF2B; color: white !important;">
+                                Vantagens
+                            </p>
+                            <ul>
+                                <li>Algoritmo simples</li>
+                                <li>Indicação de uso: relacionamento entre as características é complexo</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p style="background: #E75847; color: white !important;">
+                                Desvantagens
+                            </p>
+                            <ul>
+                                <li> Valor de k pequeno: dados com ruídos ou outliers podem prejudicar</li>
+                                <li>Valor de k grande: tendência a classificar a classe com mais elementos (overfitting) – valor default 3 ou 5</li>
+                                <li>Lento para fazer as previsões</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Base - Crédito</h3>
+                    <img src="images/knn/base-credito.png">
+                </section>
+
+                <section>
+                    <h3>Código em Python</h3>
+                    <div style="display: flex; justify-content: center; align-items: center">
+                        <img src="images/colab-icon.png" width="80" height="80">
+                        <a href="https://colab.research.google.com/drive/1_p5d5Y44YIHcuREtvtOwvk6GMlXN_Jys?usp=sharing">KNN - Base crédito</a>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center">
+                        <img src="images/icons/download.png" width="35" height="35" style="padding-right: 5px;">
+                        <a href="images/knn/credit.pkl" download>Download da base de dados</a>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <h3>Material Complementar</h3>
+                <div style="font-size: 35px; text-align: left;">
+                    <p>Curso: <a href="https://www.udemy.com/course/machine-learning-e-data-science-com-python-y/">Machine Learning e Data Science com Python de A à Z</a></p>
+                    <p>Artigo: <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/BodyPartRecognition.pdf">Real-Time Human Pose Recognition in Parts from Single Depth Images</a>
+                    </p>
+                    <p>Artigo: <a href="https://ojs.aaai.org//index.php/aimagazine/article/view/1848">A (Very) Brief History of Artificial Intelligence</a></p>
+                    <p>Artigo: <a href="https://www.researchgate.net/publication/334539401_A_Brief_History_of_Artificial_Intelligence_On_the_Past_Present_and_Future_of_Artificial_Intelligence">A Brief History of Artificial Intelligence: On the Past, Present, and Future of Artificial Intelligence</a></p>
+                    <p>Livro: <a href="https://www.amazon.com.br/Introduction-Machine-Learning-Ethem-Alpaydin/dp/0262028182">Introduction to Machine Learning</a></p>
+                    <p>Livro: <a href="https://www.amazon.com.br/Foundations-Machine-Learning-Mehryar-Mohri/dp/026201825X">Foundations of Machine Learning</a></p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Obrigado!</h3>
+                <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+                    <img src="images/icons/gmail.png" width="40" height="40">
+                    <p>kelvin.feltrin@edu.unifil.br</p>
+                </div>
             </section>
         </div>
     </div>

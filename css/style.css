@@ -40,3 +40,13 @@ p {
 .carousel-item img {
     margin: 0 !important;
 }
+
+.arvore {
+    width: fit-content;
+    height: 500px;
+}
+
+.knn-circle {
+    height: 50px;
+    width: 50px;
+}
